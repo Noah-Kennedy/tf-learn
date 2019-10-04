@@ -2,12 +2,10 @@ extern crate tensorflow;
 
 use std::error::Error;
 use std::result::Result;
-use tensorflow::ops;
-use tensorflow::train::AdadeltaOptimizer;
-use tensorflow::train::MinimizeOptions;
-use tensorflow::train::Optimizer;
+
 use tensorflow::Code;
 use tensorflow::DataType;
+use tensorflow::ops;
 use tensorflow::Output;
 use tensorflow::Scope;
 use tensorflow::Session;
@@ -16,6 +14,9 @@ use tensorflow::SessionRunArgs;
 use tensorflow::Shape;
 use tensorflow::Status;
 use tensorflow::Tensor;
+use tensorflow::train::AdadeltaOptimizer;
+use tensorflow::train::MinimizeOptions;
+use tensorflow::train::Optimizer;
 use tensorflow::Variable;
 
 // Helper for building a layer.
